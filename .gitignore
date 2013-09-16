@@ -1,7 +1,6 @@
 .idea
-.DS_Store
 *~
-*.map
-*.old*
+.DS_Store
+*.old
 *temp*
 *tmp*

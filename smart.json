@@ -1,0 +1,8 @@
+{
+  "name": "typescript",
+  "description": "TypeScript type definitions for Meteor",
+  "homepage": "https://github.com/fullflavedave/meteor-typescript",
+  "author": "Dave Allen <fullflavedave@github.com>",
+  "version": "0.1.0",
+  "git": "https://github.com/fullflavedave/meteor-typescript.git"
+}
