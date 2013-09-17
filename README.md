@@ -3,7 +3,7 @@ TypeScript definitions for Meteor
 
 
 ##Overview and usage notes
-This is a smart package for using TypeScript with Meteor.  It is a compilation of the type definitions and tests from 4 components, each maintained and downloadable separately on [Definitely Typed](https://github.com/borisyankov/DefinitelyTyped/):
+This is a smart package for using TypeScript with Meteor.  It is a compilation of the type definitions and tests from 4 components.  Each is maintained separately and can be downloaded on [Definitely Typed](https://github.com/borisyankov/DefinitelyTyped/):
 - [Meteor core](https://github.com/borisyankov/DefinitelyTyped/tree/master/meteor)
 - [Handlebars](https://github.com/borisyankov/DefinitelyTyped/tree/master/handlebars)
 - [Underscore](https://github.com/borisyankov/DefinitelyTyped/tree/master/underscore)
@@ -11,7 +11,7 @@ This is a smart package for using TypeScript with Meteor.  It is a compilation o
 
 These definitions should be enough to get started using TypeScript with any Meteor project.  Included are type definitions for the iron-router, errors, and paginated-subscription smart packages.  You will need to create type definitions for any other smart packages yourself.
 
-In order to effectively write a Meteor app with TypeScript, you will probably need to do these things:
+In order to effectively write a Meteor app with TypeScript, you will probably need to:
 
 - Reference the type definitions file (meteor_plus.d.ts)
 - Create a Template definition file
@@ -45,7 +45,7 @@ This will make these typed Meteor variables/objects available:
 
 
 ##Defining Templates
-In order to call `Template.yourTemplateName.method`, you will need to create a simple TypeScript definition file that declares a Template variable containing a list of template view-models/managers of type IMeteorViewModel (or IMeteorManager, which is the same as IMeteorViewModel).  A good place for this definition could be `<app root dir>/client/views/view-model-types.d.ts`.  Here is an example of that file:
+In order to call `Template.yourTemplateName.method` in TypeScript, you will need to create a simple TypeScript definition file that declares a Template variable containing a list of template view-models/managers of type IMeteorViewModel (or IMeteorManager, which is the same as IMeteorViewModel).  A good place for this definition could be `<app root dir>/client/views/view-model-types.d.ts`.  Here is an example of that file:
 
 	/// <reference path='../../packages/typescript/meteor_plus.d.ts'/>
 
