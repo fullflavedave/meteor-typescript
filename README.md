@@ -1,8 +1,9 @@
-#TypeScript definitions files for Meteor
+#meteor-typescript
+TypeScript definitions for Meteor
 
 
 ##Overview and usage notes
-This is a smart package for using TypeScript with Meteor.  It is a compilation of the definitions and tests from 4 components, each maintained and downloadable separately on [Definitely Typed](https://github.com/borisyankov/DefinitelyTyped/):
+This is a smart package for using TypeScript with Meteor.  It is a compilation of the type definitions and tests from 4 components, each maintained and downloadable separately on [Definitely Typed](https://github.com/borisyankov/DefinitelyTyped/):
 - [Meteor core](https://github.com/borisyankov/DefinitelyTyped/tree/master/meteor)
 - [Handlebars](https://github.com/borisyankov/DefinitelyTyped/tree/master/handlebars)
 - [Underscore](https://github.com/borisyankov/DefinitelyTyped/tree/master/underscore)
