@@ -1,4 +1,4 @@
-/// <reference path='typescript.d.ts'/>
+/// <reference path='meteor_plus.d.ts'/>
 
 /************** Begin tests for main Meteor type definitions **************/
 

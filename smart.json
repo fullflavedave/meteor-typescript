@@ -1,6 +1,6 @@
 {
   "name": "typescript",
-  "description": "TypeScript type definitions for Meteor",
+  "description": "TypeScript type definitions for Meteor, Handlebars, Underscore, and JQuery",
   "homepage": "https://github.com/fullflavedave/meteor-typescript",
   "author": "Dave Allen <fullflavedave@github.com>",
   "version": "0.1.0",

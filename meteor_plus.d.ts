@@ -169,7 +169,7 @@ interface IMeteor {
   Router: IMeteorRouter;
 
   /*********************************
-   * For Error contributed package *
+   * For Errors contributed package *
    *********************************/
   Errors: IMeteorErrors;
 

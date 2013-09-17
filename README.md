@@ -1,25 +1,30 @@
-#Meteor TypeScript
-=================
+#TypeScript definitions files for Meteor.
+----------------------------
 
-This is a Meteor smart package for TypeScript.  It is essentially contains the definitions and test from 4 different TypeScript definition files:
+#Overview
+This is a smart package for using TypeScript with Meteor.  It is a compilation of the definitions and tests from 4 components, each maintained and downloadable separately:
 - [Meteor core](https://github.com/borisyankov/DefinitelyTyped/tree/master/meteor)
 - [Handlebars](https://github.com/borisyankov/DefinitelyTyped/tree/master/handlebars)
 - [Underscore](https://github.com/borisyankov/DefinitelyTyped/tree/master/underscore)
 - [JQuery](https://github.com/borisyankov/DefinitelyTyped/tree/master/jquery)
+
+The definitions for these four components should be enough to get started using TypeScript with any Meteor project.  However, there are only type definitions for the iron-router, errors, and paginated-subscription smart packages.  You will have to add type definitions for any other smart packages yourself.
 
 
 #Definitions Usage Notes
 
 In order to effectively write a Meteor app with TypeScript, you will probably need to do these things:
 
-- Reference the type definitions file (typescript.d.ts)
+- Reference the type definitions file (meteor_plus.d.ts)
 - Create a Template definition file
 - Create Collections within a module or modules
 
 
 ##Referencing Meteor type definitions in your app
-- Place the meteor.d.ts file in a directory (maybe `<app root dir>/lib/typescript`)
-- Add `/// <reference path='../lib/typescript/meteor.d.ts'/>` to the top of any TypeScript file
+- Add a reference to meteor.d.ts file to the top of any TypeScript file:
+
+	/// <reference path='../../packages/typescript/meteor_plus.d.ts'/>
+
 
 This will make these typed Meteor variables/objects available across your application:
 
@@ -35,6 +40,8 @@ This will make these typed Meteor variables/objects available across your applic
 - Email
 - Assets
 - DPP
+- Meteor.Router
+- Meteor.Errors
 
 *Please note that the Template variable is not automatically available.  You need to follow the instructions below to use the Template variable.*
 
@@ -85,5 +92,9 @@ Listed below is a simple Meteor reference application created with TypeScript is
 - Sample Site:  <http://microscopic-typescript.meteor.com/>
 - Code (TypeScript and transpiled JS):  <https://github.com/fullflavedave/MicroscopicTypeScript>
 
-##Meteor package
-There will hopefully be a Meteor package soon listed on [Atmosphere](http://atmosphere.meteor.com "http://atmosphere.meteor.com") that can be easily added using `mrt add typescript`.
+##Testing the smart package
+You can test the type definitions by attempting to transpile meteor_plus_tests.ts from the command line:
+
+	$ tsc meteor_plus_tests.ts
+
+If the file `meteor_plus_tests.js` is successfully created without errors, then the test is successful.
