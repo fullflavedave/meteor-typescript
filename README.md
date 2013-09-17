@@ -1,14 +1,14 @@
-#TypeScript definitions files for Meteor.
+#TypeScript definitions files for Meteor
 
 
 ##Overview and usage notes
-This is a smart package for using TypeScript with Meteor.  It is a compilation of the definitions and tests from 4 components, each maintained and downloadable separately:
+This is a smart package for using TypeScript with Meteor.  It is a compilation of the definitions and tests from 4 components, each maintained and downloadable separately on [Definitely Typed](https://github.com/borisyankov/DefinitelyTyped/):
 - [Meteor core](https://github.com/borisyankov/DefinitelyTyped/tree/master/meteor)
 - [Handlebars](https://github.com/borisyankov/DefinitelyTyped/tree/master/handlebars)
 - [Underscore](https://github.com/borisyankov/DefinitelyTyped/tree/master/underscore)
 - [JQuery](https://github.com/borisyankov/DefinitelyTyped/tree/master/jquery)
 
-These definitions should be enough to get started using TypeScript with any Meteor project.  Included are type definitions for the iron-router, errors, and paginated-subscription smart packages.  Definitions for any other smart packages will need to be created.
+These definitions should be enough to get started using TypeScript with any Meteor project.  Included are type definitions for the iron-router, errors, and paginated-subscription smart packages.  You will need to create type definitions for any other smart packages yourself.
 
 In order to effectively write a Meteor app with TypeScript, you will probably need to do these things:
 
@@ -46,7 +46,7 @@ This will make these typed Meteor variables/objects available:
 ##Defining Templates
 In order to call `Template.yourTemplateName.method`, you will need to create a simple TypeScript definition file that declares a Template variable containing a list of template view-models/managers of type IMeteorViewModel (or IMeteorManager, which is the same as IMeteorViewModel).  A good place for this definition could be `<app root dir>/client/views/view-model-types.d.ts`.  Here is an example of that file:
 
-	/// <reference path='../../lib/typescript/meteor.d.ts'/>
+	/// <reference path='../../packages/typescript/meteor_plus.d.ts'/>
 
 	declare var Template: {
 	  newPosts: IMeteorViewModel;
